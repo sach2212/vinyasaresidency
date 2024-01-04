@@ -1237,6 +1237,8 @@ select {
     display: flex;
     flex-direction: column;
     height: 70vh;
+    background: rgb(110 110 110);
+
   }
 
   .header .navbar.active {
