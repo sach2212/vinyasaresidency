@@ -1225,6 +1225,7 @@ section {
   }
   .socialicons {
     display: block;
+    display: flex;
   }
   .socialicons img {
     margin-top: 2rem;
