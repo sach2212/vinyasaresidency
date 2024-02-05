@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  
+    /* font-family: "Poppins", sans-serif; */
+    scroll-behavior: smooth;
+    /* font-family: 'Montserrat', sans-serif; */
+  }
+  
+  html {
+    font-size: 50.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .aboutpage {
+    min-height: 60vh;
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/bg13.webp");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .aboutpage h1 {
+    font-size: 5rem;
+  }
+  .abooutpage_cont {
+    padding: 2rem 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 8rem; */
+    margin: 10rem 0;
+  }
+  
+  .abooutpage_cont h1 {
+    font-size: 5.6rem;
+    font-family: "Josefin Slab", serif;
+    margin-bottom: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+  .abooutpage_cont span {
+    color: black;
+    font-size: 1.8rem;
+    color: #be7f31;
+  }
+  .abooutpage_cont p {
+    color: black;
+    font-size: 15px;
+    width: 90%;
+    text-align: left;
+    margin: 1rem 0;
+    line-height: 1.5;
+
+  }
+  
+  .abooutpage_cont .buttons {
+    margin-top: 3rem;
+  }
+  
+  .why_cont1 h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-family: Josefin Slab, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    position: relative;
+  }
+  
+  .whyus {
+    padding: 8rem 10%;
+    width: 100vw;
+    background-image: url("/images/bg1.webp");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+  
+    color: #fff;
+  }
+  .whyus_cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  .why_cont1 {
+    flex: 1 1 50rem;
+  }
+  .why_cont2 {
+    flex: 1 1 29rem;
+  
+    position: relative;
+  }
+  .why_cont2 img {
+    width: 100%;
+  
+    height: 75rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .why_cont2   .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 76.5%;
+    background-color: rgba(0, 0, 0, 0.59);
+  }
+  .why_cont1 h2::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: -4.7rem;
+    border-radius: 20rem;
+    width: 4rem;
+    height: 0.2rem;
+    color: #000;
+    background-color: #be7f31;
+  }
+  
+  .why_cont1 p {
+    font-size: 15.5px;
+    /* margin-right: 2rem; */
+    padding: 1rem 0;
+    line-height: 1.65;
+  }
+  .why_cont1 p span {
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    color: #ffffff;
+    font-size: 16.5px;
+  }
+  
+
+  
+@media screen and (max-width: 530px) {
+    .abooutpage_cont {
+      padding: 2rem 0;
+    }
+    .abooutpage_cont p {
+      text-align: left;
+    }
+  }
+  

@@ -62,4 +62,36 @@ var revswiper = new Swiper(".review-slider", {
     },
 });
 
+
+
+ var revswiper = new Swiper(".testimonial_slider", {
+    spaceBetween: 10,
+    grabCursor: true,
+    loop:true,
+    rewind: true,
+ 
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:1,
+        },
+        991:{
+            slidesPerView:1,
+        },
+        
+         
+    },
+});
+
  

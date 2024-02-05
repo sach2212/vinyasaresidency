@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Noto+Sans&family=Oswald:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
- 
-  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@1&family=Lora&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +15,54 @@
   text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  /* font-family: 'Cinzel', serif; */
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: "Poppins", sans-serif;
+
+  /* font-family: "Poppins", sans-serif; */
+  scroll-behavior: smooth;
+  /* font-family: 'Montserrat', sans-serif; */
 }
+
+.swiper-button-next, 
+.swiper-button-prev {
+    color: rgb(255, 255, 255);
+    background-color: white;
+    padding: 2.4rem;
+    border-radius: 50%;
+    background: transparent;
+    background: transparent;
+    border: 1px solid white;
+    width: 20rem;
+  
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem;
+color: white;
+
+}
+
+
+
+root {
+  --swiper-navigation-size: 4px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+ 
+  border: 1px solid white;
+  top: var(--swiper-navigation-top-offset, 94%);
+
+  
+}
+ 
 
 html {
   font-size: 50.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-  overflow-x: hidden;
- 
+
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -37,6 +72,31 @@ body {
 
 section {
   padding: 5rem 9%;
+}
+
+.whatsappapp{
+  display: flex;
+  /* position: fixed; */
+  bottom:  4rem;
+  z-index: 1000000000;
+  display: flex;
+   flex-direction: column;
+   position: fixed;
+
+
+}.whatsappapp img{
+   
+margin: 1rem .8rem;
+
+width: 3.5rem;
+}
+
+
+@media screen and  (max-width:970px) {
+  .whatsappapp{
+      display: none;
+  }
+
 }
 
 .heading {
@@ -76,7 +136,6 @@ section {
   border-radius: 0.5rem;
 }
 
-
 .header {
   position: fixed;
   top: 0;
@@ -93,45 +152,52 @@ section {
   justify-content: center;
   padding: 1rem 9%;
   z-index: 10000;
-  background: rgba(255, 255, 255);
+  background: rgba(0, 0, 0, 0.79);
 }
  
-.logo.mob{
-  display: none;
+
+.logo {
+  width: 23rem;
+  padding: 1rem 0;
 }
-
- .logo {
-  width: 39rem;
-
- }
- .logo  img{
+.logo img {
   width: 100%;
-  
- }
-
- .navbar{
+}
+.menu_comp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.booknow_header a {
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1.85rem;
+  padding: 0.9rem;
+}
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  
- }
+}
 
 .header .navbar a {
   display: inline-block;
-  padding: 1.5rem 2rem;
-  font-size: 2.5rem;
+  padding: 1.5rem 1.2rem;
+  font-size: 2rem;
   /* font-weight: bolder; */
- 
+
   list-style: none;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.4rem;
-  /* font-weight: 100; */
+  color: rgb(226, 226, 226);
+  letter-spacing: 0.25rem;
+
   z-index: 1000;
-    font-weight: 700;
-  font-family: "Poppins SC", serif;
+  font-weight: 700;
+
+  font-family: "Poppins", sans-serif;
 }
- 
 
 .header .navbar a:hover {
   color: #de860b;
@@ -145,6 +211,9 @@ section {
   padding: 1rem;
   border-radius: 1rem;
 }
+.socialicons {
+  display: none;
+}
 
 /* --------------------home */
 section {
@@ -154,6 +223,7 @@ section {
 .home {
   padding: 0;
   /* cover pe ajayega*/
+  font-family: "Open Sans", sans-serif;
 }
 
 .swiper-slide {
@@ -200,989 +270,913 @@ section {
 }
 
 .content h1 {
+  /* text-transform: uppercase; */
+  font-size: 4.8rem;
+
+  margin-bottom: 3rem;
+  text-align: center;
+  /* font-weight: bolder; */
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttons {
+  background-color: #be7f31;
+  font-size: 1.7rem;
+  color: white;
+  padding: 1.2rem 1.8rem;
+  letter-spacing: 0.2rem;
+  border-radius: 0.5rem;
+  font-family: "Poppins", serif;
+  /* margin: 0.5rem;  */
+}
+
+.bookingcont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* height: 10rem; */
+  text-align: left;
+}
+
+.bookingcont h2 {
   text-transform: uppercase;
-  font-size: 6.1rem;
-  letter-spacing: 0.4rem;
-
-  font-family: "Playfair Display SC", serif;
-  /* font-weight: 300; */
-  /* margin-top: 4rem; */
+  font-size: 2.1rem;
   text-align: center;
+  margin-bottom: 1.5rem;
+  /* padding: 0 1.5rem; */
+  color: #be7f31;
+  letter-spacing: 0.3rem;
+  /* font-family: "Open Sans", sans-serif; */
+
+  font-family: "Josefin Slab", serif;
 }
 
-.content p {
-  text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
-  font-size: 2.3rem;
+.booking {
+  background-color: rgb(252, 252, 252);
 
+  position: absolute;
+
+  bottom: -80px;
+  z-index: 10;
+  padding: 1.9rem;
+  margin: 0 3rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 2.2rem;
+  text-align: left;
+}
+
+.booking input,
+.booking select {
+  width: 29rem;
+  height: 6rem;
+  margin: 1rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  font-size: 1.9rem;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(86, 86, 86);
   letter-spacing: 0.1rem;
-  margin: 2.5rem 1rem;
-  text-align: center;
 }
 
-.btn {
-  /* background: none; */
-  color: black;
-  list-style: none;
-  font-size: 1.4rem;
-  padding: 11px 2rem;
-  border: 1px solid black;
-  display: inline-block;
+.booking label {
+  text-align: left;
+  width: 100%;
+  font-size: 1.75rem;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+
+  letter-spacing: 0.8px;
+}
+
+.booking .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.booking .form .labelblock {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking .buttons {
   margin-top: 1rem;
 }
 
-.btn:hover {
-  color: white;
-  background: rgb(23, 122, 23);
+@media screen and (max-width: 970px) {
+  .booking {
+    bottom: -350px;
+  }
+  .bookingcont {
+    /* width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; */
+    height: 25rem;
+    text-align: left;
+  }
+
+  .booking input,
+  .booking select {
+    width: 50rem;
+    margin: 2rem 0;
+    margin-left: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
 }
 
-/* -------------adventure---------------- */
+/* -------------welcome---------------- */
 
-.box-container {
-  /* width: 100%;
-  height: 100%; */
+.welcome {
+  padding: 2rem 10%;
+  /* height: 50vh; */
+  text-align: center;
+  margin-top: 20rem;
+  /* margin: 19rem; */
+}
+
+.welcome_cont {
+  width: 100%;
+  height: 100%;
 
   display: flex;
-  margin-left: 2rem;
+  justify-content: space-between;
+  /* align-items: center; */
   text-align: center;
 }
+.welcome_cont p {
+  font-size: 15.9px;
+  color: black;
 
-.boxes {
-  padding: 1rem 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-bottom: 1.5rem;
-  display: grid;
-  grid-template-columns: 150px 10fr;
-  display: inline-block;
+  text-align: center;
+  line-height: 2.5rem;
+  margin: 5rem 0;
+}
+.maincont span {
+  color: #be7f31;
+  font-family: "Josefin Slab", serif;
+  font-size: 2.2rem;
+
+  font-weight: bolder;
+  /* text-transform: uppercase; */
+  font-family: "Josefin Slab", serif;
+
+  letter-spacing: 0.2rem;
+  color: #be7f31;
+
+  letter-spacing: 0.3rem;
+}
+
+.maincont h1 {
+  font-size: 6rem;
+  font-family: "Josefin Slab", serif;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+
+
+@media screen and (max-width: 973px) {
+  .welcome {
+    padding: 2rem 5%;
+
+    margin-top: 35rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  
+  .content h1{
+    font-size: 3.9rem;
+    padding: 0 1.5rem;
+  }
+  
+  
+  .welcome {
+    padding: 2rem 5%;
+
+    margin-top: 36rem;
+  }
+  .welcome_cont p {
+    line-height: 3.5rem;
+  }
+}
+
+/* ---------------------welcome ends---------- */
+
+.about {
+  width: 100vw;
+
+  margin: 10rem 0;
+  padding: 2rem 9%;
+}
+
+.about_cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rem;
+
+  justify-content: space-between;
+}
+
+.ab_img {
+  flex: 40rem;
+  position: relative;
+}
+
+.ab_img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+.ab_img img {
+  width: 100%;
+  height: 75rem;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.aboutus {
+  flex: 50rem;
+  /* background-color: rgb(218, 218, 218); */
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
 
   align-items: center;
 }
 
-.boxes img {
-  border-radius: 50%;
-  width: 12rem;
-  height: 12rem;
+.aboutus h1 {
+  font-size: 3.3rem;
+
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: "Josefin Slab", serif;
+
+  letter-spacing: 0.2rem;
+  color: #be7f31;
+
+  letter-spacing: 0.3rem;
+
+  text-align: left;
+}
+
+.aboutus p {
+  font-size: 15.6px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+
+  line-height: 2.9rem;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutus .buttons {
+  background-color: #be7f31;
+  font-size: 2.2rem;
+  color: white;
+  padding: 0.8rem 2rem;
+
+  letter-spacing: 0.2rem;
+
+  border-radius: 0.5rem;
+  font-family: "Poppins", serif;
+  text-align: center;
+}
+
+.aboutus .service {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.aboutus .services1 {
+  margin: 5rem 1.5rem;
+  /* margin-right:4rem ; */
+  /* background-color: rgb(227, 227, 227); */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 10px;
+
+  padding: 3.9rem;
+  border-radius: 2rem;
+
+  text-align: center;
+}
+.services1 h3 {
+  font-size: 5.5rem;
+  margin: 2.9rem 0;
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.services1 h6 {
+  font-size: 1.8rem;
+  color: rgb(126, 126, 126);
+}
+.services1 .servicons {
+  font-size: 5.9rem;
+  color: #be7f31;
+}
+
+@media screen and (max-width: 960px) {
+  .aboutus p {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+ 
+ 
+ 
+  .aboutus .service {
+    justify-content: center;
+  }
+
+  .about {
+    padding: 2rem 5%;
+  }
+
+  .aboutus .services1 {
+    margin: 4rem 0;
+    margin-right: 1rem;
+
+    width: 30rem;
+
+    padding: 2.9rem 0;
+  }
+
+  .aboutus .buttons {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .aboutus h1 {
+    letter-spacing: 0;
+    /* margin-left: 1rem; */
+    text-align: center;
+    font-size: 4.2rem;
+  }
+}
+
+/* ---------------------rooms ---------- */
+
+.rooms {
+  text-align: center;
+  margin: 13rem 0;
+
+  padding: 2rem 9%;
+}
+.rooms h1 {
+  font-size: 4rem;
+  padding: 2rem 9%;
+}
+
+.rooms_cont {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cont1 {
+  flex: 1 1 40rem;
+  margin: 2rem 0;
+  box-shadow: rgba(191, 191, 191, 0.24) 0px -5px 8px;
+  padding-bottom: 2rem 0;
+}
+
+.cont1 img {
+  width: 100%;
+  height: 40rem;
+}
+.cont1 h2 {
+  font-size: 2.2rem;
+  margin: 3rem 0;
+  letter-spacing: 0.3rem;
+  font-family: "Josefin Slab", serif;
+  text-transform: uppercase;
+}
+.cont1 p {
+  font-size: 15px;
+  margin-bottom: 3rem;
+  padding: 0 0.5rem;
+}
+
+.cont1 .discover {
+  font-size: 12px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+.cont1 .discover span {
+  color: #be7f31;
+  font-weight: bolder;
 }
 
 .heading {
-  font-size: 4rem;
-  text-align: center;
-  margin: 50px 0;
-}
-
-.boxes h3 {
-  color: rgb(30, 126, 30);
-  font-size: rem;
-  margin: 20px 0;
-}
-
-.boxes p {
-  line-height: 1.7rem;
-  padding: 0.3rem 1rem;
-}
-
-.btn.rm {
-  font-size: 1rem;
-}
-/* --------------------home */
-
-/* ----------------about real ---------------- */
-
-.about {
-  padding: 2rem 4%;
-
-  background-image: url("./../images/assets/abt2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* object-fit: cover; */
-
-   
-  background-attachment: fixed;
-  width: 100vw;
- 
-}
-
-.about .about_cont h1 {
-  font-size: 5.9rem;
-  color: rgb(216, 179, 67);
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.4rem;
-  margin: 4rem 0;
-  /* font-family: 'Poppins', sans-serif; */
-}
-.about .about_cont {
- 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.about .about_cont p {
-  font-size: 2.5rem;
-
-  text-transform: capitalize;
-  text-align: left;
-  color: rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-
-  margin: 3rem;
-}
-
-.about .about_cont p span {
-  font-weight: bolder;
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.2rem;
-}
-
-.button {
-  font-size: 2.6rem;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 0.2rem;
-  background-color: rgb(216, 179, 67);
-  border-radius: 0;
-  padding: 0.5rem 1.7rem;
-  margin: 2rem 0;
-  cursor: pointer;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-}
-.button:hover {
-  color: rgb(255, 255, 255);
-
-  background-color: rgb(214, 187, 103);
-}
-
-@media screen and (max-width: 454px) {
-    .about .about_cont h1{
-
-        font-size: 3.5rem;
-    
-        letter-spacing: .2rem;
-        line-height: 1.5;
-    
-        }
-       
-
-        
-}
-
-/* ---------------------about ends---------- */
-/* ---------------------amenties   ---------- */
-
-.offers {
-  padding: 4rem 4%;
-}
-
-.offers .bighead {
-   margin:  .5rem 0;
-}
-
-.offer_cont {
-  display: flex;
-
-  flex-wrap: wrap;
-  min-height: 50vh;
-}
-
-.offer_cont .content {
-  display: flex;
-
-  flex: 1 1 30rem;
-
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgb(251, 251, 251);
-}
-.offer_cont .content-spanfont {
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.offer_cont .content span {
-  margin: 2.5rem 1.5rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-  color: #020d15;
-  flex-wrap: wrap;
-}
-
-.content-span,
-.content-span2 {
-  display: flex;
-  margin: 1.2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.content-span p,
-.content-span2 p {
-  padding: 2rem;
-
-  font-size: 1.9rem;
-  text-align: center;
-}
-.content-span h3,
-.content-span2 h3 {
-  font-size: 3.2rem;
-  text-transform: capitalize;
-  font-weight: bolder;
-  margin-top: 1.5rem;
-  letter-spacing: 0.3rem;
-}
-.content-span img,
-.content-span2 img {
-  margin: 3.9rem;
-}
-
-.offers .button {
-  margin: 0.21rem 0;
-}
-
-@media (max-width: 1111px) {
-  .content-span,
-  .content-span2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 750px) {
-  .content-span,
-  .content-span2 {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ---------------------amenties end ---------- */
-
-/* ---------------------facilities  starts ---------- */
-
-.facilities {
-  padding: 4rem 4%;
-
-  background-image: url("./../images/assets/abt2.jpg");
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 95;
-}
-
-.facilities .container {
-  margin: 2rem 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  gap: 2.8rem;
-  /* margin: 5rem; */
-  width: 100%;
-  padding: 4rem;
-}
-.facilities .container .img {
-  width: 100%;
-  object-fit: cover;
-  height: 55rem;
-  object-position: center;
-}
-
-.facilities .container .col1, 
-.facilities .container .col2{
-  gap: 5rem;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 2rem 0;
-}
-
-
-.facilities .container   .fac-content {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgba(127, 127, 127, 0.1);
-}
-
-.fac-content h4 {
-  font-size: 4rem;
-  margin: 1.5rem 0;
-}
-.fac-content p {
   font-size: 2.3rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-
-@media screen  and (max-width:850px){
-  
-.facilities .container .col1, 
-.facilities .container .col2{
-  
-  grid-template-columns: repeat(1, 1fr);
- 
-}
-
-
-}
-
-
-/* ---------------------gallery cing ends ---------- */
-
-.all-gallery {
-  /* border-right: 1px solid wheat; */
-
-  background-image: linear-gradient(
-      to bottom,
-      rgba(13, 13, 15, 0.35),
-      rgba(10, 5, 5, 0.23)
-    ),
-    url(../images/assets/homebg.jpg);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100vw;
- 
-   text-align: center;
- 
-
-}
-
-.all-gallery .button{
-  margin-bottom: 6rem;
-}
-
-.gal-page{
-  margin-top: 10rem;
-}
-
-.gal-page p {
-   font-size: 2.5rem;
-}
-
-
-
-.all-gallery.gallery2 {
-   
-  padding: 0;
-  margin-top: 4rem;
-}
-.gallery {
-  width: 100%;
- 
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  padding: 50px 9%;
-  flex-direction: column;
-  
- 
-}
-.g-cont {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-gap: 2rem;
-  width: 100%;
-  height: 100%;
- 
-}
-.g-cont img {
-  width: 100%;
- 
- 
-}
-
-
- 
-
-.all-gallery h1 {
-  font-size: 6.3rem;
-  margin: 2rem 0;
-  font-weight: 300;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 0.2rem;
+  color: #be7f31;
+  /* margin-left: 6rem; */
   letter-spacing: 0.3rem;
-  position: relative;
-  color: white;
-  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.all-gallery h1::after {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  left: 45%;
-  height: 1.8px;
-  width: 15.5rem;
-  background-color: white;
-}
+@media screen and (max-width: 550px) {
+  .rooms {
+    text-align: center;
 
+    padding: 0 5%;
+  }
+
+  .cont1 {
+    margin: 5rem 0;
+  }
+}
+/* ---------------------gallery starts ---------- */
 
 /* ---------------------gallery ends ---------- */
 
-.review {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  
-  /* margin: 5rem 0; */
-  /* background-color: rgb(202, 198, 198); */
+.review h1 {
+  color: white;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  /* margin-bottom: 4rem; */
 }
 
- 
- 
+.review {
+  height: 110vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 30, 30, 0.6)),
+    url("/images/staybg.jpg");
+  background-position: center;
+  background-size: cover;
+  /* margin: 5rem 0; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
 .review .review-slider {
   width: 100%;
-  min-height: 50vh;
-  /* background-color: #774d4d; */
-  /* display: flex; */
+  /* min-height: 50vh; */
 
-  /* align-items: center;
-  justify-content: center; */
   text-align: center;
-
-
-}
-.review .review-slider .button {
-  margin: 6rem;
-  
-
 }
 
 .review .review-slider .slide {
   padding: 1rem 1rem;
   display: flex;
   justify-content: center;
+  margin: 5rem 0;
 }
-  
- 
+
 .review .review-slider .tryimage {
-  width: 100%;
-  min-height: 100%;
+  height: 50rem;
+  width: 70rem;
+  position: relative;
+  overflow: hidden;
 }
 .review .review-slider .tryimage img {
   width: 100%;
-}
 
-/* ----------------map */
-.book {
+  height: 100%;
+}
+.tryimage .h6 {
+  color: aliceblue;
+  font-size: 21px;
+  position: absolute;
+  /* text-align: center; */
+
+  z-index: 1000;
+  /* top: 40%; */
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-    url("./../images/assets/homebg.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  min-height: 67vh;
-  flex-wrap: wrap;
-
-}
-
-.forms .label {
-  color: white;
-  font-size: 2.4rem;
-  letter-spacing: 0.9px;
-}
-
-.book .promo {
-  text-transform: capitalize;
-  text-align: center;
-  color: white;
-}
-.book .promo h3 {
-  text-align: center;
-  color: white;
-  font-size: 4.5rem;
-}
-
-.book .promo p {
-  color: rgb(243, 202, 81);
-  font-size: 2.5rem;
-  letter-spacing: 0.3rem;
-}
-
-.forms {
-  display: flex;
   flex-direction: column;
-}
-
-.forms form {
-  display: flex;
-  flex-direction: column;
-}
-
-.forms form input,
-select {
-  width: 50rem;
-  height: 5rem;
+  justify-content: center;
+  width: 100%;
   cursor: pointer;
-  margin-bottom: 2rem;
-  padding: 0.5rem;
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.49);
 }
 
-.forms .label {
-  font-size: 2.8rem;
-  text-transform: capitalize;
-  letter-spacing: .3rem ;
-  padding: 1rem 0;
+.tryimage .h6 span {
+  color: rgb(200, 200, 200);
+  font-size: 15px;
 }
 
+.tryimage .overlay {
+  background-color: rgba(0, 0, 0, 0.49);
+}
 
-@media screen and (max-width: 950px) {
-  .book {
-    min-height: 100vh;
-    padding: 2rem 0;
-    flex-direction: column;
-  }
-
-  .book .promo h3 {
-    margin-top: 2rem;
-  }
-
-  .promo {
-    margin: 1rem;
+@media screen and (max-width: 540px) {
+  .review {
+    height: 120vh;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .promo h3 {
-    margin: 1rem 1rem;
-  }
+/* /* ----------------services/faciii */
 
-  .promo h3 {
-    margin: 1rem 1rem;
-  }
+.services_home {
+  background-image: linear-gradient(120deg, #ffffff 10%, #ffcc8d 130%);
 
-   
-}
-
-/* ----------------map */
-
-.destination{
-   
-  margin: 4rem 0;
-}
-
-
-
-.destination .heading{
-  margin-bottom: 3rem;
-}
-
-
-
-/* /* ----------------contact */
-
-
-.contactdata {
   width: 100vw;
-  height: 70vh;
-  background: linear-gradient(to top, rgba(56, 54, 54, 0.6), rgba(8, 8, 8, 0.5)),
-    url("../images/assets/images/room1.jpeg");
-    
-  background-position: center;
-  background-size: cover;
-
+  padding: 4rem 8%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.services_home .heading {
+  font-weight: bolder;
+  margin-top: 4rem;
+  font-size: 4rem;
+}
+.services_home .service-card {
+  display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  /* margin-top: -8rem; */
-}
-.contact-content h1 {
-  text-transform: capitalize;
-  color: white;
-  font-size: 6.8rem;
-}
-.contact-content h1 span {
-  text-transform: capitalize;
-  color: white;
-  /* font-size: 4rem; */
-  color: #f2b650;
-}
+  text-align: center;
 
-.contactus {
-  padding: 4rem 4%;
-  background-color: rgb(245, 245, 245);
-}
-.contatc_box1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.services_home .serv_icons {
+  padding: 2rem 0;
+
+  font-size: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 1.5rem;
+  border-radius: 3rem;
+  border: 1px solid rgb(154, 154, 154);
+}
+.services_home .serv_icons h3 {
+  font-size: 2.5rem;
+  padding: 3rem 0;
+  margin: 0.5rem 0;
+}
+.serv_icons p {
+  font-size: 14.7px;
+  /* padding: 0 1.2rem; */
+  padding: 0 0.7rem;
+}
+.serv_icons .icon {
+  font-size: 6.4rem;
+  /* color: #be7f31;
+     color: #2f2f2f; */
+}
+.services_home .serv_icons:hover {
+  box-shadow: rgba(78, 78, 78, 0.1) 0px 4px 2px;
+
+  color: #ffffff;
+
+  background: #be7f31;
+}
+.services_home .buttons {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 920px) {
+  .service-card {
+    flex-wrap: wrap;
+  }
+
+  .services_home {
+    padding: 8rem 1%;
+  }
+  .serv_icons {
+    margin: 2.5rem 0.5rem;
+  }
+}
+
+/* ------------testimonia---------? */
+
+.testimonial {
+  width: 100vw;
+  /* height: 100vh; */
+
+  /* text-align: center; */
+  padding: 4rem 9%;
+  background-image: url("/images/bg17.webp");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* color: aliceblue; */
+}
+
+.rev_cont {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.6);
+  flex-wrap: wrap;
+  height: 75vh;
+  gap: 4rem;
+}
+.rev_cont .swiper.testimonial_slider {
+  flex: 1 1 60rem;
+  padding: 0 2rem;
+}
+
+.rev_cont .swiper.testimonial_slider .swiper-slide {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.rev_cont .swiper.testimonial_slider .swiper-slide h1 {
+  text-align: center;
+
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.rev_cont .swiper.testimonial_slider .swiper-slide p {
+  font-size: 20px;
+  margin: 10rem 0;
+  font-style: italic;
+  width: 100%;
+  font-weight: 500;
+  line-height: 3.9rem;
+  color: #000000;
+  padding: 0 2rem;
+}
+.rev_cont .swiper.testimonial_slider .swiper-slide .quote {
+  font-size: 4.9rem;
+  color: #be7f31;
+  text-align: left;
+}
+
+.testimonial2 {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+}
+.testimonial2 p {
+  font-size: 17px;
+  margin-top: 2rem;
+}
+.testimonial2 h2 {
+  font-size: 5.1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3rem;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+
+  color: #000000;
+}
+.testimonial2 .rating h3 {
+  font-size: 3.8rem;
+  /* margin: 2rem; */
+
+  letter-spacing: 0.3rem;
+}
+.rating .icons {
+  font-size: 2.3rem;
+  margin: 0.2rem;
+}
+
+.google {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.google img {
+  width: 40px;
+}
+.google a {
+  font-size: 1.4rem;
+
+  list-style: none;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  margin: 0 0.5rem;
+  background-color: #4285f4;
+}
+
+@media screen and (max-width: 950px) {
+  .rev_cont {
+    height: 130vh;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .rev_cont {
+    text-align: center;
+  }
+  .testimonial2 {
+    align-items: center;
+
+    flex: 1 1 40rem;
+  }
+
+  .rev_cont .swiper.testimonial_slider {
+    border-bottom: 1px solid rgb(184, 184, 184);
+  }
+
+  .rev_cont .swiper.testimonial_slider .swiper-slide h1::before {
+    left: 17rem;
+  }
+  .testimonial {
+    padding: 4rem 2%;
+  }
+
+  .rev_cont .swiper.testimonial_slider {
+    height: 70rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .rev_cont .swiper.testimonial_slider .swiper-slide h1::before {
+    left: 15rem;
+  }
+  .rev_cont {
+    height: 130vh;
+    text-align: center;
+  }
+
+  .testimonial {
+    padding: 4rem 2%;
+    margin: 4rem 0;
+  }
+}
+
+ 
+/* ----------------footer */
+
+.footer {
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(39, 38, 36) 59%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+.footers {
+  width: 100%;
+
+  text-align: center;
+  /* margin: 5rem; */
+}
+
+.footer_head h1,
+.footer_head h1 span {
+  font-size: 5.9rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  line-height: 1.5;
+  font-family: "Josefin Slab", serif;
+}
+
+.footer_head h1 span {
+  color: #be7f31;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid rgb(254, 254, 254);
+  padding-bottom: 2rem;
+  padding: 3rem 0;
   margin-bottom: 2rem;
 }
 
-.contact1 {
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px 0px;
-  background-color: rgb(252, 252, 252);
-  border-radius: 0.5rem;
+.footer .menu {
+  flex: 1 1 25rem;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.contact1 h4 {
-  color: #494747;
-  font-size: 2.7rem;
-  font-weight: bolder;
+.keywords {
+  flex: 1 1 25rem;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.container h3 {
+  font-size: 3rem;
   text-transform: capitalize;
   margin: 2rem 0;
-  letter-spacing: 0.2rem;
-  text-align: center;
+  font-weight: 800;
+  color: rgb(32, 31, 31);
+  letter-spacing: 0.3rem;
+  color: rgb(255, 255, 255);
 }
 
-.contact1 p {
+.footer .menu a {
+  text-decoration: none;
   color: black;
-  font-size: 1.9rem;
-  color: rgb(92, 89, 89);
-  text-align: center;
-  padding: 2rem 0;
+  text-align: left;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: rgb(170, 170, 170);
+  font-size: 2rem;
+  margin: .6rem 0;
 }
 
-.contactus h1 {
-  font-weight: bolder;
-  letter-spacing: 0.1rem;
+.footer .menu a:hover {
+  color: rgb(228, 158, 53);
+  transition: 0.3s;
 }
 
-.contactus {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.footer .container .keywords p {
+  cursor: pointer;
+  text-decoration: none;
+
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: rgb(170, 170, 170);
+  padding: 0.5rem 0;
+  margin: .6rem 0;
 }
-.contactus .button {
-  margin-bottom: 3rem;
+.footer .container .keywords p a {
+ 
+  color: rgb(170, 170, 170);
+  
+}
+
+.footer .container .keywords p a:hover {
+  color: rgb(228, 158, 53);
+  transition: 0.3s;
+  /* cursor: pointer; */
+}
+
+.footer .copy {
   color: white;
-  font-weight: bolder;
+  text-transform: capitalize;
+  letter-spacing: 0.9px;
+
+  text-align: center;
+  font-size: 1.7rem;
 }
 
 @media screen and (max-width: 500px) {
-  .contact-content h1 {
-    font-size: 6.2rem;
-    margin-top: 3rem;
-    text-align: center;
-  }  
-  
- 
+  .footer .menu {
+    align-items: center;
+  }
+  .footer .keywords {
+    align-items: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
 }
-/* ----------------contact */  
-/* ----------------aboutpage */
-.aboutpg{
-  /* padding: 4rem 8%; */
-  margin-top: 12rem;
-  }
-  
-  .maincontent {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin: auto;
-
-  }
-  
-  .maincontent p{
-  
-      font-size: 17px;
-      text-align: left;
-          width: 90%;
-      /* background-color: antiquewhite; */
-  
-      text-transform: capitalize;
-      padding: 0.5rem 0 ;
-
-  
-  } 
-  .maincontent h3 {
-   font-size: 5rem;
-   text-transform: uppercase;
-   
-  margin:2rem  0rem;
-  font-weight: bolder;
-  letter-spacing: 1.9px;
-  
-  }
-  .peacefull{
-      display: flex;
-      flex-wrap: wrap;
-      margin: 4rem 0;
-      padding: 2rem;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  .p_img{
-  
-      flex: 1 1 30rem;
-   
-     
-  
-  }.p_img img{
-  
-      width: 100%;
-      object-fit: cover;
-      
-  }
-  .p_content{
-  
-      flex :1 1 55rem;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-   
-  }
-  
-  
-  .peacefull p {
-   
-      font-size: 20px;
-      text-transform: capitalize;
-      
-      margin-bottom: 2rem;
-      
-  
-  }.peacefull h3 {
-      font-size: 3.5rem;
-      text-transform: uppercase;
-      
-     margin:2rem  0;
-     font-weight: bolder;
-     letter-spacing: 1.9px;
-      
-  
-  }
-  
-  
-  .p_content.services{
-   
-   display:flex;
-     
-     padding-left: 4rem;
-  }
-   
-   
-  
-  .p_content .button  {
-    
-    color: white;
-    
-  }
-  
-   .media_c{
-      display: none;
-  }
-  
-  
-  
-  @media screen and (max-width:940px) {
-  
-      .media_c{
-          display: block;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-      }
-      
-      
-      .p_content{
-          display: none;
-  
-      }
-      
-      
-      .peacefull h3 {
-          font-size: 1.5rem;
-          
-          
-      
-      }
-      
-      .peacefull p {
-          font-size: 1.2rem;
-              
-          
-      
-      }
-  
-  
-      .peacefull{
-          padding: 1rem
-          ;
-  
-      }
-  
-  
-      .p_content.services{
-   
-          display:flex;
-            
-            padding-left: 0;
-          
-          
-         }
-  
-  }
-
-
-
-/* ----------------aboutpage */
-/* ----------------footer */
-.footer{
-
-  /* height: 50vh; */
-  width: 100%; 
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%,
-   rgb(39, 38, 36) 59%, rgb(0, 0, 0) 100%);
-   
-     text-align: center;
-   padding-bottom: 2rem ;
-
-
-
-  }
-  
-  .footer .container{
-  display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      border-bottom: 1px solid rgb(254, 254, 254);
-      padding-bottom: 2rem ;
-      padding: 3rem 0;
-    margin-bottom: 2rem;
-    
-  }
-   
-   
-  .footer .menu{
-  
-      flex:  1 1 25rem;
-      display: flex;
-      list-style: none;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-  }
-  .keywords{
-      flex:  1 1 25rem;
-      display: flex;
-      list-style: none;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-     
-  }
-  
-  .container h3{
-  
-      font-size: 3.8rem;
-      text-transform: capitalize;
-      margin: 2rem 0;
-      font-weight: 800;
-      color: rgb(32, 31, 31);
-      letter-spacing:.3rem;
-      color: rgb(255, 255, 255);
-  }
-  
-  .footer .menu a{
-   
-  
-   text-decoration: none;
-   color: black;
-   text-align: left;
-   padding: .5rem 0;
-   text-transform: capitalize;
-   font-size: 1rem;
-   color: rgb(238, 238, 238);
-   font-size: 2rem;
-  
-  }
-  
-  .footer .menu a:hover{
-   
-  
-   color: rgb(228, 158, 53);
-   transition: .3s;
-   
-  }
-  
-  
-    .footer .container .keywords p {
-      cursor: pointer;
-      text-decoration: none;
-        
-      text-transform: capitalize;
-       font-size: 2rem;
-       color: rgb(238, 238, 238);
-      padding: .5rem 0;
-  
-  }
-   
-  
-  .footer .container .keywords p:hover {
-  
-      color: rgb(228, 158, 53);
-      transition: .3s;
-      /* cursor: pointer; */
-  }
-  
-  .footer .copy{
-   
-      color: white;
-      text-transform: capitalize;
-      letter-spacing: .9px;
-     
-        
-      text-align: center;
-      font-size: 1.7rem;
-           
-  }
-  
-  
-  @media screen  and (max-width:500px) {
-       
-  .footer .menu{
-  
-   
-      align-items: center;
-    
-  }.footer .keywords{
-        align-items: center;
-  }
-  
-    
-  .footer .container{
-    
-      flex-direction: column;
-
-    }
-     
-  
-  
-  }
 @media (max-width: 1211px) {
   html {
     font-size: 45%;
@@ -1191,229 +1185,74 @@ select {
   #menu-btn {
     display: inline-block;
     display: block;
-    /* z-index: 10000;*/
+
     font-size: 3.8rem;
     z-index: 10000;
     margin-left: 6rem;
     border: none;
     margin-bottom: 2rem;
+    color: #ffffff;
   }
 
-
-
-  .logo.mob{
-    display: block;
-    width: 42rem;
-  }
- .logo.mob img{
-     width: 100%;
-      
-  }
-
-  .logo {
+  .booknow_header {
     display: none;
-     width: 42rem;
   }
  
-  
 
   #menu-btn.fa-times {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
   .header {
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 
   .header .navbar {
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
-    background: rgb(210, 210, 210);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    background: rgb(110 110 110);
 
+    background: rgb(255, 255, 255);
+    /* justify-content: space-around; */
+    /* text-align: center; */
+  }
+  .socialicons {
+    display: block;
+  }
+  .socialicons img {
+    margin-top: 2rem;
+    width: 50px;
+    padding: 0 0.9rem;
+  }
+
+  .header .navbar a {
+    display: block;
+    font-size: 3rem;
+    color: #272727;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    width: 100%;
+    letter-spacing: 0.3rem;
+    margin: 0.62rem 0;
+    padding: 1.5rem;
+  }
+
+  .header .callnow {
+    color: #be7f31;
   }
 
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-
-  .header .navbar a {
-    display: block;
-    font-size: 3.5rem;
-    color: #fff;
-    border-bottom: 1px solid rgb(192, 192, 192);
-  }
 }
-
-@media (max-width: 991px) {
-  .h-welcome h2 {
-    font-size: 8rem;
-    margin-top: 6rem;
-  }
-  .h-welcome p {
-    font-size: 3rem;
-  }
-
-  .home-container .home-details {
-    display: flex;
-    flex-direction: column;
-    /* overflow: hidden; */
-  }
-
-  .home-contact form input {
-    margin: 1rem;
-  }
-
-  .home-container .h-welcome2 .home-contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding: 0.5rem 0;
-    margin: 0;
-  }
-
-  .gymdata-contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem 0;
-  }
-  .header #joinus {
-    color: white;
-  }
-
-  .gymdata-contact form input {
-    width: 45rem;
-
-    margin: 1rem 0;
-  }
-
-  .header {
-    padding: 0 2rem;
-  }
-
-  section {
-    padding: 3rem 2rem;
-  }
-
-  .only-images {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-container .home-details .h-welcome h2 {
-    font-size: 6.8rem;
-  }
-  .h-welcome p {
-    font-size: 2.3rem;
-    /* margin-bottom: -9rem; */
-  }
-
-  .ab-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .fa-cont {
-    display: flex;
-    flex-direction: column;
-  }
-  .fa-cont2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* ----------------comuniyty------------- */
-  .comunity .com-content {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-  }
-  .comunity {
-    margin-bottom: 4rem;
-  }
-
-  .com-content .cont2 p {
-    font-size: 2.2rem;
-  }
-
-  .fa-cont1 .fa-data h3 {
-    padding: 1rem;
-    font-style: italic;
-  }
-
-  .home .slide .content .btn {
-    /* margin-top: 5rem; */
-    position: absolute;
-    bottom: 21rem;
-  }
-
-  .home .slide .content2 span {
-    font-size: 2.3rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .getstarted .container .box {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .imgcontent {
-    flex-direction: column;
-  }
-
-  .inner-content a {
-    margin-bottom: 20px;
-  }
-
-  .inner-about {
-    padding: 2rem 0;
-  }
-
-  .inner-prices {
-    padding: 1.5rem 1rem;
-  }
-
-  .about {
-    gap: 3rem;
-  }
-
-  .about .image {
-    margin-top: 5rem;
-  }
-
-  .about .content .title {
-    font-size: 3rem;
-  }
-
-  .features .box-container .box.second {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-  }
-
-  .home .slide .content h3 {
-    /* margin-top: 90px; */
-    font-size: 5rem;
-  }
-
-  .cross-box .personalfitness .p-training,
-  .cross-box .personalfitness .diet {
-    background-color: #e5262b;
-  }
-}
-
+ 
 @media (max-width: 648px) {
   html {
     font-size: 46%;
@@ -1439,180 +1278,24 @@ select {
 }
 
 @media (max-width: 535px) {
-
   html {
     font-size: 45%;
   }
 
-  .content p{
-    /* padding: 2rem 1rem; */
-    font-size: 2.5rem;
-
-  }
-  .content h1 {
-   
-    font-size: 5.8rem;
-    letter-spacing: 0.3rem;
-    margin-top: 4rem;
-    font-weight: 100;
-   
-  }
-  
-  .comunity h1::after {
-    left: 20rem;
-  }
-  .comunity h1 {
-    font-size: 5rem;
-  }
-
-  .contact .map iframe {
-    width: 35rem;
-    height: 30rem;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-  }
-  .comunity .cont2 .btn.comunity-p {
-    display: inline-block;
-  }
-  .about .content .btn {
-    color: white;
-
-    background: #e5262b;
-    font-weight: 300;
-  }
-
-  .forms input,
-  .forms textarea {
-    width: 40rem;
-  }
-
-  .contact .con-content h2 {
-    font-size: 3rem;
-  }
-
-  .contact .con-content p {
-    font-size: 1.85rem;
-    color: #c7c4c4;
-  }
-
-  .discovers {
-    font-size: 50.5rem;
-  }
-
-  .home .content {
-    text-shadow: 1px 1px 5px black;
-  }
-
-  .cross-box .cf-content h3 {
-    font-size: 2.5rem;
-  }
-
-  .cross-box .personalfitness .p-training,
-  .cross-box .personalfitness .diet {
-    background-color: #e5262b;
-  }
 }
-
-/*# sourceMappingURL=style.css.map */
 
 @media (max-width: 470px) {
   html {
     font-size: 44%;
   }
 
-  .home-contact form input {
-    width: 44rem;
-  }
-
-  .fa-cont1 .fa-data h3 {
-    margin: 0rem 2rem;
-    font-style: italic;
-  }
-  .member {
-    font-size: 7rem;
-    position: relative;
-  }
-  .member::after {
-    position: absolute;
-    left: 5rem;
-  }
-  .home .slide .content h3 strong {
-    font-size: 4rem;
-    letter-spacing: 0.1rem;
-    line-height: 2.2;
-  }
-
-  .home .slide .content h3 {
-    font-size: 2.8rem;
-  }
-
-  .home .slide .content p {
-    /* font-size: 2rem; */
-    letter-spacing: 0.1rem;
-    padding: 0 2rem;
-  }
-
-  .gymdata p {
-    font-size: 2.6rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .gymdata h3 {
-    text-align: left;
-    letter-spacing: 0.1rem;
-  }
-
-  .home .slide .content2 span {
-    font-size: 2rem;
-    padding-top: 6rem;
-  }
-
-  .content h1 {
    
-    font-size: 5.1rem;
-    letter-spacing: 0.1rem;
-   
-  }
-  
-  
-
 }
 
 @media (max-width: 395px) {
   html {
     font-size: 45%;
   }
-  .comunity h1 {
-    font-size: 4.4rem;
-  }
-  .comunity h1::after {
-    left: 15rem;
-  }
-
-  .gymdata p {
-    font-size: 2.3rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .home-container .home-details .h-welcome h2 {
-    font-size: 5.8rem;
-
-    margin-bottom: 5 rem;
-  }
-
-  .home .slide .content span {
-    /* font-size: 1.3rem; */
-    color: #fff;
-    display: block;
-    /* margin-top: 1rem; */
-  }
-
-  .home .slide .content2 span {
-    font-size: 1.9rem;
-    padding-top: 6rem;
-    letter-spacing: 0.1rem;
-  }
+ 
+  
 }
