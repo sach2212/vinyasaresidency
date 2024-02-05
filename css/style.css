@@ -726,8 +726,8 @@ section {
 
 .review {
   height: 110vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 30, 30, 0.6)),
-    url("/images/staybg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(30, 30, 30, 0.6)),url("../images/staybg.jpg");
+  
   background-position: center;
   background-size: cover;
   /* margin: 5rem 0; */
@@ -884,7 +884,7 @@ section {
 
   /* text-align: center; */
   padding: 4rem 9%;
-  background-image: url("/images/bg17.webp");
+  background-image: url("../images/bg17.webp");
   display: flex;
   flex-direction: column;
   justify-content: center;

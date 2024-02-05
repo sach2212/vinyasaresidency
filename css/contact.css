@@ -38,7 +38,7 @@ html {
 
 
 .contact_c{
-    background-image:url(/images/bg13.webp);
+    background-image:url(../images/bg13.webp);
   
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ html {
 }
 .map_container{
     /* height: 100vh; */
-    background-image: url("/images/bg1.webp");
+    background-image: url("../images/bg1.webp");
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
